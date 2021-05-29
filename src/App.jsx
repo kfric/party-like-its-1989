@@ -18,7 +18,6 @@ export class App extends Component {
   componentDidMount() {
     this.fetchData()
   }
-
   render() {
     return (
       <main>
@@ -27,12 +26,14 @@ export class App extends Component {
         </header>
         <div>
           <ul>
-            {this.state.results.map((results, id) => {
+            {this.state.results.map((results, id, poster_path) => {
               return (
                 <li key={results.id}>
                   {results.original_title}:
                   <p>
-                    <img src="https://image.tmdb" />
+                    <img
+                      src={`https://image.tmdb.org/t/p/w185/${results.poster_path}`}
+                    ></img>
                   </p>
                   <p>{results.overview}</p>
                 </li>
