@@ -23,7 +23,7 @@ export class App extends Component {
     const movieResults = this.state.results.map(results => {
       return (
         <article key={results.id}>
-          <div>
+          <div className="poster">
             <img
               src={`https://image.tmdb.org/t/p/w185/${results.poster_path}`}
               alt="Poster image of the movie"
@@ -40,8 +40,12 @@ export class App extends Component {
     return (
       <main>
         <header>
-          <h1>Party like it's 1989!</h1>
-          <h2>Popular movies from 1989</h2>
+          <div className="neonWrapper">
+            <div className="neonText">
+              <h1>Party like it's 1989!</h1>
+              <h3>Popular movies from 1989</h3>
+            </div>
+          </div>
         </header>
         <section>{movieResults}</section>
       </main>
