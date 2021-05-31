@@ -40,12 +40,17 @@ export class App extends Component {
     return (
       <main>
         <header>
-          <div className="neonWrapper">
-            <div className="neonText">
-              <h1>Party like it's 1989!</h1>
-              <h3>Popular movies from 1989</h3>
-            </div>
-          </div>
+          <nav className="pageTitle">
+            <h1>Party like it's 1989!</h1>
+          </nav>
+          <nav className="subTitle">
+            <h3>Popular movies from 1989</h3>
+          </nav>
+          <nav className="navBar">
+            <a href="#">Genre</a>
+            <a href="#">Rating</a>
+            <a href="#">Adult</a>
+          </nav>
         </header>
         <section>{movieResults}</section>
       </main>

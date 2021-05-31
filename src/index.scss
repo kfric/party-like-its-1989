@@ -1,6 +1,5 @@
 :root {
   font: 16px / 1 sans-serif;
-  padding: 0;
 }
 html {
   height: 100%;
@@ -9,24 +8,27 @@ html {
 body {
   margin: 0;
   min-height: 100%;
-  background-color: black;
+  background-image: url(./imgs/neon4.jpg);
 }
 header {
   top: 0;
   padding-top: 1rem;
   width: 100vw;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   position: fixed;
-  background-color: rgba(0, 0, 0, 0.658);
 }
+
+.pageTitle {
+  display: flex;
+  justify-content: center;
+}
+
 h1 {
   font-family: 'Press Start 2P', cursive;
   color: rgb(255, 0, 200);
   margin-bottom: 1rem;
   font-size: large;
-  display: flex;
-  justify-content: center;
   font-size: medium;
 }
 h3 {
@@ -35,8 +37,14 @@ h3 {
   margin-top: 0;
   color: white;
 }
+.navBar {
+  visibility: hidden;
+}
 li {
+  display: flex;
+  justify-content: center;
   list-style: none;
+  padding-top: 6px;
 }
 .overview {
   padding-left: 15rem;
@@ -49,31 +57,64 @@ p {
 }
 
 article {
-  margin: 1rem;
   width: 500px;
 }
 
 section {
-  padding-top: 4rem;
+  padding-top: 8rem;
   display: flex;
   flex-wrap: wrap;
 }
 
 ul {
-  padding-left: 1rem;
+  padding-right: 40px;
   color: white;
 }
 
-li {
-  display: flex;
-  justify-content: center;
-  margin: 1rem;
-}
-
 img {
-  padding-top: 34px;
+  width: 65%;
+  height: auto;
 }
 .poster {
   display: flex;
   justify-content: center;
+}
+
+@media all and (min-width: 687px) {
+  h1 {
+    font-size: xx-large;
+  }
+}
+@media all and (min-width: 1500px) {
+  .pageTitle {
+    display: flex;
+    justify-content: center;
+  }
+
+  h3 {
+    visibility: hidden;
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  article {
+    padding-top: 4rem;
+  }
+  section {
+    justify-content: center;
+    padding-top: 10rem;
+  }
+
+  .navBar {
+    visibility: visible;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  a {
+    color: white;
+    font-size: xx-large;
+  }
 }
