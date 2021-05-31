@@ -47,6 +47,7 @@ export class App extends Component {
             <h3>Popular movies from 1989</h3>
           </nav>
           <nav className="navBar">
+            <a href="#">Sort A/Z</a>
             <a href="#">Genre</a>
             <a href="#">Rating</a>
             <a href="#">Adult</a>

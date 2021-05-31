@@ -26,16 +26,23 @@ header {
 
 h1 {
   font-family: 'Press Start 2P', cursive;
-  color: rgb(255, 0, 200);
   margin-bottom: 1rem;
-  font-size: large;
-  font-size: medium;
+  font-size: 17px;
+  color: #ffd8d8;
+  text-shadow: 0.1vw 0vw 0.25vw #ffd8d8, 0.2vw 0vw 0.25vw #ffd8d8,
+    0.4vw 0vw 0vw #f25757, 0.1vw 0vw 0.1vw #f25757, 2vw 0vw 0.1vw #f25757,
+    0.4vw 0vw 0.1vw #f25757, 0.1vw 0vw 2vw #f25757, 2vw 0vw 2vw #f25757,
+    0.4vw 0vw 0.2vw #f25757, 0.1vw 0vw 1vw #e50b0b, 0.2vw 0vw 1vw #e50b0b,
+    0.4vw 0vw 0vw #e50b0b, 0.1vw 0vw 5vw #e50b0b, 0.2vw 0vw 20vw #e50b0b,
+    0.4vw 0vw 10vw #e50b0b, 0.1vw 0vw 10vw #e50b0b, 0.2vw 0vw 30vw #e50b0b,
+    0.4vw 0vw 10vw #e50b0b;
 }
 h3 {
   display: flex;
   justify-content: center;
   margin-top: 0;
   color: white;
+  font-size: medium;
 }
 .navBar {
   visibility: hidden;
@@ -104,7 +111,7 @@ img {
   }
   section {
     justify-content: center;
-    padding-top: 10rem;
+    padding-top: 11rem;
   }
 
   .navBar {
